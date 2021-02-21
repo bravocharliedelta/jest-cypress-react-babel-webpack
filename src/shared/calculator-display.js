@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from '@emotion/styled'
+import {withTheme} from '@emotion/react'
 import AutoScalingText from './auto-scaling-text'
 import {getFormattedValue} from './utils'
 
@@ -34,4 +35,4 @@ CalculatorDisplay.propTypes = {
   value: PropTypes.string.isRequired,
 }
 
-export default CalculatorDisplay
+export default withTheme(CalculatorDisplay)
