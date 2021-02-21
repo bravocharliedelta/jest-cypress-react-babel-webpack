@@ -2,7 +2,7 @@ import React from 'react'
 import {render, fireEvent} from '@testing-library/react'
 import Calculator from '../calculator'
 
-test('render', () => {
+test('the clear button switches from AC to C when there is an entry', () => {
   const {getByText} = render(<Calculator />)
   const clearButton = getByText(/AC/)
 
